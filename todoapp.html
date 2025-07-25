@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>To do app</title>
+</head>
+<body>
+    <div class="container">
+        <div class="to-doapp">
+            <h1>To-do App</h1>
+            <div class="stat-container">
+                <div class="details">
+                    <h3>Keep it Up!</h3>
+                <div id="progressbar">
+                    <div id="progress">
+
+                    </div>
+                </div>
+                </div>
+            <div class="stats-number">
+                <p id="numbers">0/0</p>
+            </div>
+            </div>
+            <form class="input-area">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+            
+
+            </form>
+             <div class="todos-container">
+             <ul id="task-list"></ul>
+             </div>
+
+        </div>
+    </div>
+
+    <script src="net.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    
+</body>
+</html>

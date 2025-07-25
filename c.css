@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#birthdayMessage span {
+  display: inline-block;
+}
+
+#birthdayMessage span:nth-child(1)  { color: #ff4d4d; }
+#birthdayMessage span:nth-child(2)  { color: #ffa64d; }
+#birthdayMessage span:nth-child(3)  { color: #ffff66; }
+#birthdayMessage span:nth-child(4)  { color: #66ff66; }
+#birthdayMessage span:nth-child(5)  { color: #059be6; }
+#birthdayMessage span:nth-child(7)  { color: #550b9f; }
+#birthdayMessage span:nth-child(8)  { color: #ff66cc; }
+#birthdayMessage span:nth-child(9)  { color: #ffcc66; }
+#birthdayMessage span:nth-child(10) { color: #00ffff; }
+#birthdayMessage span:nth-child(11) { color: #ff6699; }
+#birthdayMessage span:nth-child(12) { color: #99ff99; }
+#birthdayMessage span:nth-child(13) { color: #ff9966; }
+#birthdayMessage span:nth-child(14) { color: #66ffff; }
+#birthdayMessage span:nth-child(15) { color: #ffccff; }
+#birthdayMessage span:nth-child(16) { color: #4f0edc; }
+#birthdayMessage span:nth-child(17) { color: #2ecf0e; }
+#birthdayMessage span:nth-child(18) { color: #cc1212; }
+#birthdayMessage span:nth-child(19) { color: #c30055; }
+#birthdayMessage span:nth-child(20) { color: #e2f202; }
+#birthdayMessage span:nth-child(21) { color: #b705b7; }
+#birthdayMessage span:nth-child(22) { color: #12ece4; }
+#birthdayMessage span:nth-child(23) { color: #e0113a; }
+
+
+.congrats-text {
+  font-size: 2rem;
+  color: gold;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

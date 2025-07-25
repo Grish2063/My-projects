@@ -1,0 +1,118 @@
+{
+	"name": "phone-preview",
+	"displayName": "Mobile Preview",
+	"description": "Preview your web app in a phone-sized viewport/mobile device",
+	"version": "2.1.1",
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:mobile-preview.show"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "mobile-preview.show",
+				"title": "Mobile Preview: Show"
+			},
+			{
+				"command": "mobile-preview.openSettings",
+				"title": "Mobile Preview: Open Settings"
+			},
+			{
+				"command": "mobile-preview.togglePro",
+				"title": "Mobile Preview: Toggle Pro Version"
+			},
+			{
+				"command": "mobile-preview.enterLicense",
+				"title": "Mobile Preview: Enter License Key"
+			},
+			{
+				"command": "mobile-preview.viewLicenseInfo",
+				"title": "Mobile Preview: View License Information"
+			},
+			{
+				"command": "mobile-preview.purchaseLicense",
+				"title": "Mobile Preview: Purchase License"
+			},
+			{
+				"command": "mobile-preview.deactivateLicense",
+				"title": "Mobile Preview: Deactivate License"
+			},
+			{
+				"command": "mobile-preview.checkLicenseServer",
+				"title": "Mobile Preview: Check License Server Status"
+			}
+		],
+		"configuration": {
+			"title": "Mobile Preview",
+			"properties": {
+				"mobile-preview.url": {
+					"type": "string",
+					"default": null,
+					"description": "The URL of the web app to preview"
+				},
+				"mobile-preview.device": {
+					"type": "string",
+					"default": "iPhone 13 Pro",
+					"description": "The device to preview the web app on",
+					"enum": [
+						"iPhone 13 Pro",
+						"iPhone 15",
+						"iPhone 15 Pro Max"
+					]
+				},
+				"mobile-preview.deviceOptions": {
+					"type": "array",
+					"default": [
+						"iPhone 13 Pro",
+						"iPhone 15",
+						"iPhone 15 Pro Max"
+					],
+					"description": "Available devices for preview (dynamically updated based on license)",
+					"scope": "application"
+				}
+			}
+		}
+	},
+	"files": [
+		"out/**/*",
+		"out/assets/**/*",
+		"LICENSE.md"
+	],
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint src --ext .ts",
+		"package": "vsce package"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.37",
+		"@types/vscode": "^1.60.0",
+		"@typescript-eslint/eslint-plugin": "^4.19.0",
+		"@typescript-eslint/parser": "^4.19.0",
+		"eslint": "^7.22.0",
+		"typescript": "^4.2.3"
+	},
+	"publisher": "lirobi",
+	"icon": "out/assets/extension-logo.png",
+	"license": "Proprietary",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Lirobi/phoneviewvscode"
+	},
+	"dependencies": {
+		"node-fetch": "^3.3.2",
+		"open": "^10.1.0"
+	},
+	"__metadata": {
+		"installedTimestamp": 1753075639305,
+		"targetPlatform": "undefined",
+		"size": 632866
+	}
+}

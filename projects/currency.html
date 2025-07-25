@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="cr.css">
+</head>
+<body>
+    <form>
+        <h1>Currency Converter</h1>
+        <input type="number" id="textbox" value = "0" ><br>
+
+       <input type="radio" id="toNrs" name="unit">
+       <label for="toNrs"> $ ➡ Nrs </label>  
+
+       <input type="radio" id="todollar" name="unit">
+       <label for="todollar"> Nrs ➡ $ </label> 
+
+        <br>
+        <br>
+        
+        <button type="button" onclick="convert()">Submit</button>
+        <p id = "result"></p>
+    </form>
+    <script src="srj.js"></script>
+</body>
+</html>

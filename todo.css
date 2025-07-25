@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(wolf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: monospace;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+.to-doapp{
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+}
+.to-doapp h1{
+    font-size: 2rem;
+}
+.input-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.input-area input{
+    flex: 1;
+    padding: 10px 17px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 22px;
+    background-color: rgba(255, 194, 209, 0.3);
+    color: lightgray;
+
+}
+.input-area input::placeholder{
+    color: lightgrey;
+}
+.input-area button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.1rem;
+    background-color: rgba(255, 194, 209, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    transform: all 0.2s ease;
+
+}
+.input-area button:hover{
+    transform: scale(1.1);
+    background: aqua;
+}
+.todos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#task-list{
+    width: 100%;
+}
+#task-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 194, 209, 0.3);
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    transition: box-shadow 0.2s ease;
+}
+#task-list li:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#task-list li .checkbox{
+    min-width: 20px;
+    height: 20px;
+    border: 2px solid;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+
+}
+#task-list li .checkbox:checked{
+    background: aqua;
+    transform: scale(1.1);
+}
+#task-list li .checkbox:checked::before {
+    content: '\2713';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9rem;
+}
+#task-list li span{
+    flex: 1;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+.task-buttons{
+    display: flex;
+    gap: 10px;
+    margin-right: auto;
+}
+.task-buttons button{
+    background: rgba(255, 194, 209, 0.3);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-buttons .edit-btn{
+    background-color: red;
+}
+.task-buttons .delete-btn{
+    background-color: blue;
+}
+#task-list li.completed span{
+    text-decoration: 2px line-through #000;
+    color: black;
+}
+.stat-container{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.details h3{
+    color: white;
+}
+#progressbar{
+    width: 200px; /* Or try fit-content / max-content if you want it dynamic */
+    height: 7px;
+    background: rgba(255, 194, 209, 0.3);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+#progress{
+    width: 0%;
+    height: 100%;
+    background: aqua;
+    border-radius: 20px;
+    transition: width 0.2s ease;
+
+
+}
+#numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: aqua;
+    border: 2px solid rgba(255, 194, 209, 0.3);
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 1.5rem;
+
+}

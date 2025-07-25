@@ -1,0 +1,33 @@
+#container{
+    text-align: center;
+  
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: lightblue ;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: aqua;
+}
+button:active{
+    background-color: lightblue;
+}
+input{
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+
+}

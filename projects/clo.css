@@ -1,0 +1,28 @@
+body {
+    background-image: url(city.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+#clock {
+    font-size: 6rem;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(4px);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
