@@ -1,0 +1,182 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background: white;
+  width: 90%;
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#timer {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#answer-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-align: left;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.correct {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.incorrect {
+  background-color: #F44336;
+  color: white;
+}
+
+#next-btn {
+    background: grey;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#next-btn:hover {
+  background-color: #555;
+}
+
+/* DARK MODE */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .app {
+  background: #2c2c2c;
+  color: #e0e0e0;
+  box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+}
+
+body.dark-mode #dark-mode-toggle {
+  color: #f9d71c;
+}
+
+body.dark-mode .btn {
+  background-color: #3d3d3d;
+  color: #eee;
+  border: 1px solid #666;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #5a5a5a;
+  color: #fff;
+}
+
+body.dark-mode .correct {
+  background-color: #81c784;
+  color: #1b1b1b;
+}
+
+body.dark-mode .incorrect {
+  background-color: #e57373;
+  color: #1b1b1b;
+}
+
+body.dark-mode #next-btn {
+  background-color: #555;
+  color: #fff;
+}
+
+body.dark-mode #next-btn:hover {
+  background-color: #777;
+}
+@media (max-width: 480px) {
+  .app {
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .btn, #next-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+}
+#progress {
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
