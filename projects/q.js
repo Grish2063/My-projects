@@ -71,7 +71,7 @@ function showQuestion() {
         answerButtons.appendChild(button);
     });
 
-    startTimer(); // Start timer for each question
+    startTimer(); 
 }
 
 function resetState() {
