@@ -8,8 +8,8 @@ const products = [
     price: 119,
     desc: "Classic and clean. Air cushioning for all-day comfort.",
     colors: [
-      { code: "black", img: "air.png" },
-      { code: "darkblue", img: "air2.png" },
+      { code: "black", img: "images/air.png" },
+      { code: "darkblue", img: "images/air2.png" },
     ],
   },
   {
@@ -18,8 +18,8 @@ const products = [
     price: 149,
     desc: "Iconic style meets high performance. The legend lives on.",
     colors: [
-      { code: "lightgray", img: "jordan.png" },
-      { code: "green", img: "jordan2.png" },
+      { code: "lightgray", img: "images/jordan.png" },
+      { code: "green", img: "images/jordan2.png" },
     ],
   },
   {
@@ -28,8 +28,8 @@ const products = [
     price: 109,
     desc: "Retro vibes with modern durability. Perfect for everyday wear.",
     colors: [
-      { code: "lightgray", img: "blazer.png" },
-      { code: "green", img: "blazer2.png" },
+      { code: "lightgray", img: "images/blazer.png" },
+      { code: "green", img: "images/blazer2.png" },
     ],
   },
   {
@@ -38,8 +38,8 @@ const products = [
     price: 129,
     desc: "Sustainable and sleek. Built with recycled materials.",
     colors: [
-      { code: "black", img: "crater.png" },
-      { code: "lightgray", img: "crater2.png" },
+      { code: "black", img: "images/crater.png" },
+      { code: "lightgray", img: "images/crater2.png" },
     ],
   },
   {
@@ -48,8 +48,8 @@ const products = [
     price: 99,
     desc: "Bold and comfortable. For the free spirit in you.",
     colors: [
-      { code: "gray", img: "hippie.png" },
-      { code: "black", img: "hippie2.png" },
+      { code: "gray", img: "images/hippie.png" },
+      { code: "black", img: "images/hippie2.png" },
     ],
   },
 ];
